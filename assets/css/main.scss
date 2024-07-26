@@ -185,7 +185,51 @@ img {
         margin-right: 1rem;
     }
 }
-    
+
+.aboutme .intro p {
+    font-size: 1.2em;
+    color: var(--post_date);
+}
+
+.aboutme .bio, .aboutme .contact, .aboutme .education {
+    margin: 20px 0;
+}
+
+.aboutme .bio p {
+    margin-bottom: 10px;
+    color: var(--post_text);
+}
+
+.aboutme .contact h2, .aboutme .education h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--post_title);
+    padding-bottom: 5px;
+    color: var(--post_title);
+}
+
+.aboutme .contact p {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--post_text);
+    font-family: monospace;
+    display: inline-block;
+}
+
+.aboutme .education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutme .education li {
+    margin: 10px 0;
+}
+
+.aboutme .education li strong {
+    color: var(--post_link);
+}
+
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -261,6 +305,7 @@ img {
 }
 
 .archive_title {
+    color: var(--archive_title);
     word-wrap: normal;
     @include breakpoint(medium) {
         max-width: 80%;
@@ -345,16 +390,33 @@ img {
 
 .header_name {
     display: block;
-    color: var(--name_font);
+    color: var(--archive_title);
     font-size: 1.5em;
 }
 
 .header_job {
     display: block;
-    margin-top: .1rem;
+    margin-top: .5rem;
     color: var(--job_font);
-    font-size: 0.75em;
+    font-size: 0.8em;
     font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center align icons */
+    gap: 10px;
+    margin-top: 12px;
+}
+  
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+  
+.social-icons a:hover {
+    color: #007BFF;
 }
 
 .theme_changer {   
@@ -493,8 +555,6 @@ img {
         transform: rotate(3deg);
     }
 }
-
-
 
 /* 4. Post
    ========================================================================== */
@@ -694,8 +754,7 @@ img {
     padding: 10px;
 }
 
-
-/* 6. Footer
+/* . Footer
    ========================================================================== */
 
 .footer {

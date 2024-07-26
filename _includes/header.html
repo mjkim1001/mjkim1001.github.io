@@ -12,6 +12,31 @@
     <span class="header_job">{{ site.user.job }}</span>
     <span class="header_mes">{{ site.user.message }}</span>
 
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      {% if site.social.email %}
+      <a href="mailto:{{ site.social.email }}" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      {% endif %}
+      {% if site.social.github %}
+      <a href="{{ site.social.github }}" title="GitHub" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      {% endif %}
+      {% if site.social.linkedin %}
+      <a href="{{ site.social.linkedin }}" title="LinkedIn" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      {% endif %}
+      {% if site.social.scholar %}
+      <a href="{{ site.social.scholar }}" title="Google Scholar" target="_blank">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+      {% endif %}
+    </div>
+
+    <!-- Navigation -->
     <nav class="nav">
       {% if site.user.aboutme %}
       <ul class="nav_list">
