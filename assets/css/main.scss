@@ -390,7 +390,7 @@ img {
 
 .header_name {
     display: block;
-    color: var(--archive_title);
+    color: var(--nav_font);
     font-size: 1.5em;
 }
 
@@ -410,7 +410,7 @@ img {
 }
   
 .social-icons a {
-    color: #333;
+    color: var(--job_font);
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -425,7 +425,7 @@ img {
         display: none;
 
         &+div {
-            background: url('../img/m.png') no-repeat center center;
+            background: url('../img/dark.png') no-repeat center center;
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -496,12 +496,12 @@ img {
     zoom: 1;
 
     & a {
-        color: var(--nav_font);
+        color: var(--archive_title);
         font-size: 90%;
 
         &:hover,
         &:focus {
-            color: var(--nav_font_hover);
+            color: var(--archive_title_hover);
         }
     }
 
@@ -509,7 +509,7 @@ img {
 
         &:after {
             content: '/';
-            color: var(--nav_font);
+            color: var(--archive_title);
         }
 
         &:first-child::before,
