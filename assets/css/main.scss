@@ -186,49 +186,6 @@ img {
     }
 }
 
-.aboutme .intro p {
-    font-size: 1.2em;
-    color: var(--post_date);
-}
-
-.aboutme .bio, .aboutme .contact, .aboutme .education {
-    margin: 20px 0;
-}
-
-.aboutme .bio p {
-    margin-bottom: 10px;
-    color: var(--post_text);
-}
-
-.aboutme .contact h2, .aboutme .education h2 {
-    font-size: 1.5em;
-    border-bottom: 2px solid var(--post_title);
-    padding-bottom: 5px;
-    color: var(--post_title);
-}
-
-.aboutme .contact p {
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    color: var(--post_text);
-    font-family: monospace;
-    display: inline-block;
-}
-
-.aboutme .education ul {
-    list-style: none;
-    padding: 0;
-}
-
-.aboutme .education li {
-    margin: 10px 0;
-}
-
-.aboutme .education li strong {
-    color: var(--post_link);
-}
 
 
 ::-webkit-scrollbar {
@@ -261,7 +218,8 @@ img {
 /* 2. Archive
    ========================================================================== */
 
-.archive {
+
+.intro {
     color: var(--archive_font);
 
     ul {
@@ -296,6 +254,52 @@ img {
     }
 }
 
+.intro .bio, .intro .contact, .intro .education {
+    margin: 10px 0;
+}
+
+.intro .bio p {
+    margin-bottom: 10px;
+    text-align: justify;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    color: var(--post_text);
+}
+.intro .bio h2{
+    font-size: 1.5em;
+    color: var(--post_date);
+}
+
+.intro .contact h2, .intro .education h2, .intro .news h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--post_date);
+    padding-bottom: 5px;
+    color: var(--post_date);
+}
+
+.intro .contact p {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--post_text);
+    font-family: monospace;
+    display: inline-block;
+}
+
+.intro .education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intro .education li {
+    margin: 10px 0;
+}
+
+.intro .education li strong {
+    color: var(--archive_title);
+}
+
 .archive_date {
     text-transform: uppercase;
 
@@ -323,6 +327,7 @@ img {
     margin-top: 1.4rem;
     margin-bottom: 0.6rem;
 }
+
 
 
 /* 3. Header
@@ -367,8 +372,8 @@ img {
 .header_circle {
     border: none;
     box-sizing: border-box;
-    height: 7rem;
-    width: 7rem;
+    height: 11rem;
+    width: 11rem;
     border-radius: 50%;
 
     img {
@@ -390,7 +395,7 @@ img {
 
 .header_name {
     display: block;
-    color: var(--nav_font);
+    color: var(--job_font);
     font-size: 1.5em;
 }
 
