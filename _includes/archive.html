@@ -2,11 +2,11 @@
   <div class="bio">
       <h2>Hi, I'm Minji Kim!</h2>
       <p>
-          I am currently pursuing a Ph.D. in Statistics and Operations Research (STOR) at UNC Chapel Hill, under the supervision of Prof. Vladas Pipiras.
-          My research focuses on leveraging multiple computer models with varying levels of fidelity (in terms of accuracy and cost) to achieve more accurate estimations, a field known as multi-fidelity modeling.
+          I am currently pursuing a Ph.D. in Statistics and Operations Research (STOR) at UNC Chapel Hill, under the guidance of Prof. Vladas Pipiras.
+          My research focuses on leveraging multiple computer models with varying levels of fidelity (in terms of accuracy and cost) to achieve more accurate estimations, a field known as multi-fidelity (MF) modeling.
       </p>
       <p>
-          I hold a B.S. (2019) and M.S. (2021) in Statistics from Seoul National University, where I was mentored by Prof. Hee-Seok Oh. I've interned at LLNL in the Summer of 2022 and at Moloco in the Summer of 2023. More details are available in my CV.
+          I've interned at LLNL in the Summer of 2022 and at MOLOCO in the Summer of 2023. More details are available in my CV.
       </p>
   </div>
   <div class="education">
@@ -34,13 +34,14 @@
           {% endif %}
           <li>
               <time class='archive_date' datetime='{{ post.date | date_to_xmlschema }}'>
-                  {{ post.date | date: "%b %-d, %Y" }}
+                  {{ post.date | date: "%b, %Y " }}
               </time>
               <div class='archive_title'>
-                  {{ post.title | escape }}
-                  {% if post.url and post.link_text %}
-                      <a href='{{ post.url }}'>{{ "(Link)" | escape }}</a>
-                  {% endif %}
+                {% if post.url %}
+                    <a href='{{ post.url }}'>{{ post.title | escape }}</a>
+                {% else %}
+                    {{ post.title | escape }}
+                {% endif %}
               </div>
               {% if post.additional_info %}
                   <p class='news_additional_info'>
