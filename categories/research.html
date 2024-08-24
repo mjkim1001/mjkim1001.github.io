@@ -1,0 +1,18 @@
+---
+layout: page
+type: Research
+---
+
+<section class="archive">
+    <h2>Research Topics</h2>
+    <ul>
+        {% for post in site.posts %}
+        {% if post.categories contains "Research" %}
+        <li style="margin-bottom: 15px;">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</section>
