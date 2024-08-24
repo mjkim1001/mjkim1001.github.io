@@ -169,35 +169,6 @@ img {
     }
 }
 
-.publications {
-    @include breakpoint(medium) {
-        max-width: 30rem;
-        margin-top: 5.5rem;
-        margin-bottom: 20px;
-
-        img {
-            float: none;
-        }
-    }
-    
-    @include mobile-only {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    ol {
-        list-style: decimal;
-        margin: 15px;
-        padding: 0;
-
-        li {
-            margin-bottom: 0.6rem;
-        }
-    }
-}
-
-
 
 
 ::-webkit-scrollbar {
@@ -262,6 +233,16 @@ img {
         margin-top: 2rem;
         margin-left: 1.2rem;
         margin-right: 1.2rem;
+    }
+
+    ol {
+        list-style: decimal;
+        margin: 15px;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.6rem;
+        }
     }
 }
 
