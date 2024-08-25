@@ -3,16 +3,20 @@
   <ul class="nav_list">
     {% if site.user.aboutme %}
     <li class="nav_item">
-      <a href="{{ site.baseurl }}/aboutme.html">about</a>
+      <a href="{{ site.baseurl }}/aboutme.html">Publication</a>
     </li>
 
     {% endif %}
     {% for category in site.categories %}
     {% capture cat_name %}{{ category | first }}{% endcapture %}
+    {% if cat_name == "Teaching" %}
+      {% assign teaching_post = site.posts | where: "categories", "Teaching" | first %}
+      <a href="{{ teaching_post.url | relative_url }}">Teaching</a>
+    {% else %}
+        <a href="{{ site.baseurl }}/categories/{{ cat_name | downcase }}.html">{{ cat_name }}
+          ({{ category | last | size }})</a>
+    {% endif %}
 
-    <li class="nav_item">
-      <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">{{ cat_name }} ({{ category | last | size }})</a>
-    </li>
     {% endfor %}
   </ul>
 
