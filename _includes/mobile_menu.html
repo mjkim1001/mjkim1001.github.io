@@ -10,11 +10,15 @@
     {% for category in site.categories %}
     {% capture cat_name %}{{ category | first }}{% endcapture %}
     {% if cat_name == "Teaching" %}
-      {% assign teaching_post = site.posts | where: "categories", "Teaching" | first %}
-      <a href="{{ teaching_post.url | relative_url }}">Teaching</a>
+    {% assign teaching_post = site.posts | where: "categories", "Teaching" | first %}
+      <li class="nav_item">
+        <a href="{{ teaching_post.url | relative_url }}">Teaching</a>
+      </li>
     {% else %}
+      <li class="nav_item">
         <a href="{{ site.baseurl }}/categories/{{ cat_name | downcase }}.html">{{ cat_name }}
           ({{ category | last | size }})</a>
+      </li>
     {% endif %}
 
     {% endfor %}
