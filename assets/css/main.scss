@@ -245,6 +245,23 @@ img {
         }
     }
 }
+.archive h1{
+    font-size: 2em;
+    color: var(--post_date);
+}
+
+.archive h3, .archive .talks .talk h3{
+    color: var(--post_date);
+}
+
+.archive .talks .talk p{
+    margin-top: 7px; 
+    margin-bottom: 7px;
+}
+
+.archive .talks .talk h3{
+    margin-bottom: 10px;
+}
 
 .archive_title {
     word-wrap: normal;
