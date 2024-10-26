@@ -522,7 +522,7 @@ img {
 }
 
 .nav_list {
-    margin: 0;
+    margin: 0.5rem;
     padding: 0;
     list-style: none;
 
@@ -538,7 +538,8 @@ img {
 
     & a {
         color: var(--archive_title);
-        font-size: 90%;
+        font-size: 100%;
+        font-weight: bold;
 
         &:hover,
         &:focus {
