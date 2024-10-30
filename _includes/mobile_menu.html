@@ -5,8 +5,10 @@
     <li class="nav_item">
       <a href="{{ site.baseurl }}/aboutme.html">Publication</a>
     </li>
-
     {% endif %}
+    <li class="nav_item">
+      <a href="{{ site.baseurl }}/talks.html">Talks</a>
+    </li>
     {% for category in site.categories %}
     {% capture cat_name %}{{ category | first }}{% endcapture %}
     {% if cat_name == "Teaching" %}
@@ -20,8 +22,10 @@
           ({{ category | last | size }})</a>
       </li>
     {% endif %}
-
     {% endfor %}
+    <li class="nav_item">
+      <a href="{{ site.baseurl }}/honors.html">Awards</a>
+    </li>
   </ul>
 
 </nav>
