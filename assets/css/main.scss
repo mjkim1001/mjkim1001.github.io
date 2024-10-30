@@ -566,10 +566,10 @@ img {
 
     @include mobile-only {
 
-        &:after {
+        /* &:after {
             content: '/';
             color: var(--archive_title);
-        }
+        }*/
 
         &:first-child::before,
         &:last-child::after {
