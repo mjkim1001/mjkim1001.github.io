@@ -1,18 +1,28 @@
 <nav class="mobile_menu">
 
   <ul class="nav_list">
+    {% if site.user.aboutme %}
     <li class="nav_item">
       <a href="{{ site.baseurl }}/aboutme.html">Publication</a>
     </li>
-    <li class="nav_item">
-      <a href="{{ site.baseurl }}/research.html">Research</a>
-    </li>
+    {% endif %}
     <li class="nav_item">
       <a href="{{ site.baseurl }}/talks.html">Talks</a>
     </li>
-    <li class="nav_item">
-      <a href="{{ site.baseurl }}/categories/teaching.html">Teaching</a>
-    </li>
+    {% for category in site.categories %}
+    {% capture cat_name %}{{ category | first }}{% endcapture %}
+    {% if cat_name == "Teaching" %}
+    {% assign teaching_post = site.posts | where: "categories", "Teaching" | first %}
+      <li class="nav_item">
+        <a href="{{ teaching_post.url | relative_url }}">Teaching</a>
+      </li>
+    {% else %}
+      <li class="nav_item">
+        <a href="{{ site.baseurl }}/categories/{{ cat_name | downcase }}.html">{{ cat_name }}
+          ({{ category | last | size }})</a>
+      </li>
+    {% endif %}
+    {% endfor %}
     <li class="nav_item">
       <a href="{{ site.baseurl }}/honors.html">Awards</a>
     </li>
