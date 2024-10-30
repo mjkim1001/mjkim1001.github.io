@@ -591,12 +591,6 @@ img {
         top: 8rem; 
         position: relative;
 
-        .nav_list {
-            display: flex;
-            gap: 10px;
-        }
-
-
     }
 
     @include breakpoint(medium) {
