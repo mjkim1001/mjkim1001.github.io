@@ -590,6 +590,15 @@ img {
         margin: -.5rem;
         top: 8rem; 
         position: relative;
+
+        .nav_list {
+            display: flex;
+            flex-direction: column; 
+            padding: 0;
+            margin: 0;
+        }
+
+
     }
 
     @include breakpoint(medium) {
@@ -598,6 +607,7 @@ img {
         right: 1.25rem;
     }
 }
+
 
 @keyframes jiggle {
     0% {
