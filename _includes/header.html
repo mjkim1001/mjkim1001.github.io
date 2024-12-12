@@ -57,6 +57,9 @@
           {% if cat_name == "Teaching" %}
           {% assign teaching_post = site.posts | where: "categories", "Teaching" | first %}
           <a href="{{ teaching_post.url | relative_url }}">Teaching</a>
+          {% elsif cat_name == "Research" %}
+          {% assign research_post = site.posts | where: "categories", "Research" | first %}
+          <a href="{{ research_post.url | relative_url }}">Research</a>
           {% else %}
           <a href="{{ site.baseurl }}/categories/{{ cat_name | downcase }}.html">{{ cat_name }}
             ({{ category | last | size }})</a>
