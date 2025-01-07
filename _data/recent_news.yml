@@ -1,3 +1,8 @@
+- title: "Paper on MF-importance sampling published in SIAM/ASA Journal on Uncertainty Quantification"
+  year: "2025"
+  date: "2025-01-03"
+  url: "https://epubs.siam.org/doi/abs/10.1137/24M1639142"
+
 - title: "Paper accepted to NeurIPS 2024 Workshop on Machine Learning and the Physical Sciences"
   year: "2024"
   date: "2024-10-09"
@@ -7,11 +12,6 @@
   year: "2024"
   date: "2024-10-09"
   url: "https://arxiv.org/abs/2410.08523"
-
-- title: "Paper on MF-importance sampling accepted to SIAM/ASA Journal on Uncertainty Quantification"
-  year: "2024"
-  date: "2024-09-11"
-  url: "https://arxiv.org/abs/2402.17984"
 
 - title: "Started teaching STOR 155 in the Fall semester at UNC Chapel Hill!"
   year: "2024"
@@ -28,7 +28,7 @@
   date: "2024-02-28"
 
 
-- title: "Paper published on MF-calibration in Ocean Engineering"
+- title: "Paper on MF-calibration published in Ocean Engineering"
   year: "2023"
   date: "2023-12-15"
   url: "https://www.sciencedirect.com/science/article/abs/pii/S0029801823027051"
