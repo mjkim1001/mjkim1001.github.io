@@ -1,4 +1,11 @@
-- title: "Leading an undergraduate research project on breast cancer genome analysis in the Statistical Consulting course."
+
+- title: "Passed my Ph.D. proposal defense!"
+  year: "2025"
+  date: "2025-04-04"
+  url: "../assets/documents/talk25-proposal.pdf"
+
+
+- title: "Advising an undergraduate research project on breast cancer genome analysis in the Statistical Consulting course."
   year: "2025"
   date: "2025-01-08"
 
@@ -20,11 +27,6 @@
 - title: "Started teaching STOR 155 in the Fall semester at UNC Chapel Hill!"
   year: "2024"
   date: "2024-08-20"
-
-- title: "Gave a talk at Graduate Student Seminar at UNC Chapel Hill"
-  year: "2024"
-  date: "2024-04-26"
-  url: "../assets/documents/talk24-GSS.pdf"
 
 
 - title: "Presented poster on MF-importance sampling at SIAM UQ 24 Conference, Trieste, Italy (Received both SIAM and UNC Travel Awards!)"
