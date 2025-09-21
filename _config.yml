@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl"
   
 
 baseurl: # the subpath of the site
-url: http://mjkim1001.github.io/catbook # the base hostname & protocol for your site
+url: https://mjkim1001.github.io # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
 timezone:

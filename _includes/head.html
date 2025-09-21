@@ -19,7 +19,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="{{ site.user.name }}">
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="keywords" content="Minji Kim, Statistics, PhD student, UNC Chapel Hill, Data Science, Machine Learning, Statistical Analysis, Research">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/profile.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="twitter:image" content="{{ site.url }}/assets/img/profile.png">
 
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" media="all">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
