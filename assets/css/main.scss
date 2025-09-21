@@ -320,6 +320,12 @@ img {
     text-align: justify;
     hyphens: auto;
     word-wrap: break-word;
+
+    @include mobile-only {
+        margin-bottom: 1.2rem;
+        line-height: 1.6;
+        text-align: left;
+    }
 }
 .intro .bio h2{
     font-size: 1.5em;
@@ -328,6 +334,11 @@ img {
 .intro .bio h3{
     font-size: 1em;
     color: var(--post_date);
+
+    @include mobile-only {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .intro .contact h2, .intro .education h2, .intro .news h2 {
