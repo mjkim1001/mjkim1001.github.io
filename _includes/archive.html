@@ -4,26 +4,27 @@
     <h3>🌟 Who am I?</h3>
     <ul>
       <li>I am a Ph.D. candidate in Statistics and Operations Research at UNC Chapel Hill under Prof. Vladas Pipiras.</li>
-      <li>My research focuses on modeling physical systems with computer simulation codes, using statistical methods for data-driven acceleration and physics-informed AI.</li>
+      <li>My research lies in the field of modeling physical systems with computer simulation codes, developing statistical methods for data-efficient learning in multi-fidelity and semi-supervised settings.</li>
     </ul>
 
     <h3>🔍 Research interests</h3>
     <ul>
-      <li>(1) How to utilize data efficiently when multiple simulation codes for the same quantity with different fidelities are available? (computational cost vs. accuracy trade-off.)
-            I focus on estimating distributions of scarce high-fidelity outputs by leveraging cheaper model outputs through (i) nonparametric kernel density estimation with importance sampling
-            and (ii) a parametric ensemble estimator approach, both with particular emphasis on extreme behaviors.</li>
-        <li>(2) Spatio-temporal modeling in latent space: Physical AI research in physics-informed reduced-order modeling for approximating (spatio-temporal)
-            PDE solutions. Latent state dynamics were modeled with Neural ODEs. Used coordinate-based NNs to encode/decode
-            the space and apply insights from 3D graphics to impose boundary conditions.</li>
-      </ul>
+      <li>How to utilize data efficiently when multiple simulation codes for the same quantity with different fidelities are available?
+      </li>
+      <li>We develop multi-fidelity strategies for estimating the distribution of high-fidelity outputs, with a particular focus on extreme events.
+      We explore two strategies for leveraging low-fidelity data:</li>
+      <li> (i) <strong>Selective sampling:</strong> Low-fidelity model outputs are first evaluated to guide the sampling of high-fidelity outputs.
+        We apply this in a nonparametric setting, incorporating extreme value theory to improve tail estimation.</li>
+      <li> (ii) <strong>Data fusion:</strong> A larger amount of offline, independently obtained low-fidelity data is used to obtain estimators with reduced variance.
+        We first apply this in a parametric framework, then extend it to a nonparametric setting.</li>
+    </ul>
       <h3>💡 Experience</h3>
       <ul>
-        <li> Applied these skills during internships at Google (2025), Moloco (2023), and LLNL (2022). 
-             Contributed to advancing large-scale language model research at Google, tackling real-time ad bidding challenges at Moloco and data-driven physics simulations at the national research lab.</li>
+        <li>I applied my skills during internships at Google (LLM evaluation, 2025), Moloco (real-time ad bidding market, 2023), and LLNL (data-driven acceleration of physics simulations, 2022).</li>
       </ul>
       <p>
         More details are in the <a href="{{ site.baseurl }}/categories/research.html">Research tab</a> or my 
-        <a href="{{ site.baseurl }}/assets/documents/Resume25F.pdf">Resume</a>.
+        <a href="{{ site.baseurl }}/assets/documents/resume26.pdf">Resume</a>.
       </p>
   </div>
   <div class="education">
